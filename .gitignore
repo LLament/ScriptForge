@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+# CMake build folders (可以叫 build、cmake-build-*、out、bin 等)
+build/
+cmake-build-*/
+out/
+bin/
+Debug/
+Release/
+x64/
+x86/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# CMake generated files (CMake生成的各种缓存、配置文件)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+Makefile
+
+# VS/VSCode 临时文件（如果有用到的话）
+*.sln
+*.vcxproj*
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+.vscode/
+*.code-workspace
+
+# 编译输出（目标文件、二进制、中间产物）
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.o
 *.a
 *.lib
-
-# Executables
+*.so
+*.dll
 *.exe
 *.out
-*.app
+
+# IDEs 常见垃圾（CLion, JetBrains, Xcode等）
+.idea/
+*.iml
+*.swp
+*.DS_Store
+
+# 单元测试输出
+test-results/
+*.gcda
+*.gcno
+*.gcov
+
+# 你可以在这里添加更多你自己生成的临时目录/文件
+# Add more ignored files/folders below as needed

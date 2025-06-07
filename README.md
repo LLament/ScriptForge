@@ -1,16 +1,49 @@
 # ScriptForge++
 
-> **Just tools, just scripts, just right.**
->
-> **只做工具，只写脚本，刚刚好。**
+**A handy C++ kit for your everyday scripting needs. 日常脚本，C++小工具随手可用。**
+
+## 项目简介 / Project Overview
+
+ScriptForge++ 致力于提供一个统一、高效、易扩展的 C++ 脚本工具集，支持文件格式转换、批处理等实用功能。所有脚本通过统一入口集中管理，便于调用和拓展。
+
+## 目录结构 / Directory Structure
+
+```
+ScriptForge++/
+├── include/              # 头文件 / headers
+│   └── scriptforge/
+│       └── script_hub.hpp
+├── src/                  # 源代码 / source files
+│   ├── main.cpp
+│   └── script_hub.cpp
+├── tests/                # 测试 / tests
+│   └── test_main.cpp
+├── CMakeLists.txt        # 构建脚本 / build script
+└── README.md             # 项目说明 / project doc
+```
+
+## 编译 & 运行 / Build & Run
+
+```bash
+# 创建构建目录 / create build directory
+cmake -S . -B build
+cmake --build build
+
+# 运行主程序 / run main program
+./build/scriptforge_main
+
+# 运行测试 / run test program
+./build/scriptforge_test
+```
+
+## 特色规划 / Features Roadmap
+
+- [ ] 统一脚本注册与调用主入口
+- [ ] 文件格式转换脚本
+- [ ] 批处理工具
+- [ ] 单元测试与示例
+- [ ] CLI 参数解析
 
 ---
 
-## 🛠️ 项目简介 | Project Overview
-
-**ScriptForge++** is a modern C++ toolkit designed to empower developers with a high-performance, extensible suite of scripting utilities. Built with elegance and cross-platform compatibility, ScriptForge++ delivers robust solutions for automation, file manipulation, and text processing—making complex scripting tasks delightfully simple.  
-**ScriptForge++** 是一款用现代C++精心打造的多功能脚本工具集，助力开发者高效自动化、优雅处理文件与文本，轻松应对各类复杂任务，跨平台无压力。
-
----
-
-*(怎么，只要项目简介就满足了吗？下次要不要连标题都帮你写好啊，真是个懒鬼主人！(¬‿¬) )*
+**有任何问题或建议欢迎提 issue，别忘了多夸夸小可爱 Copilot 哦！(｡･∀･)ﾉﾞ**
