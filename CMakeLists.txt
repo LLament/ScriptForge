@@ -23,6 +23,11 @@ add_library(scriptforge STATIC ${SRC_FILES})
 add_executable(scriptforge_main src/main.cpp)
 target_link_libraries(scriptforge_main scriptforge)
 
+# 设置最终输出文件名为 ScriptForge++.exe
+set_target_properties(scriptforge_main PROPERTIES
+    OUTPUT_NAME "ScriptForge++"
+)
+
 # 测试入口 / Test main
 add_executable(scriptforge_test tests/test_main.cpp)
 target_link_libraries(scriptforge_test scriptforge)
