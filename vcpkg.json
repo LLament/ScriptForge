@@ -1,0 +1,9 @@
+{
+  "name": "scriptforge",
+  "version-string": "0.1.0",
+  "description": "A handy C++ kit for everyday scripting needs. 日常脚本，C++小工具随手可用。",
+  "dependencies": [
+    "icu",         // Unicode/国际化支持
+    "uchardet"     // 编码侦测/charset detection
+  ]
+}

@@ -1,22 +1,22 @@
-version: 0.2
+version: 2
 updates:
   # vcpkg dependencies
   - package-ecosystem: "vcpkg"
-    directory: "/"                 # vcpkg.json 所在目录
+    directory: "/"                 # vcpkg.json 所在目录 / 项目根目录
     schedule:
       interval: "daily"            # 每日检查
     open-pull-requests-limit: 5    # 最多同时5个PR
 
-  # conan dependencies
+  # conan dependencies (if you add conanfile.txt/py 将来也能用)
   - package-ecosystem: "conan"
-    directory: "/"                 # conanfile.txt/py 所在目录
+    directory: "/"
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
 
-  # CMake dependencies (FetchContent/ExternalProject，仅实验性)
+  # CMake dependencies (FetchContent/ExternalProject，实验性)
   - package-ecosystem: "cmake"
-    directory: "/"                 # CMakeLists.txt 所在目录
+    directory: "/"
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
